@@ -2,6 +2,16 @@
 #include <math.h>
 
 
+int primo(int n) {
+  int m;
+  m = divisor_proprio(n);
+  if (m == n) {
+    return 1;  // n é primo
+  } else {
+    return 0;  // n não é primo
+  }
+}
+
 int main() {
   int i, count = 0;
   
