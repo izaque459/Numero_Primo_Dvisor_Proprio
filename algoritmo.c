@@ -2,7 +2,7 @@
 #include <math.h>
 
 // o divisor proprio informa o menor numero diferente de 1 que divide n
-int divisor_proprio(int n){ 
+int min_divisor_proprio(int n){ 
   int divisor = 2;
   float raiz = sqrt(n);
   while (divisor <= raiz && n % divisor != 0) {
@@ -18,7 +18,7 @@ int divisor_proprio(int n){
 
 int primo(int n) {
   int m;
-  m = divisor_proprio(n);
+  m = min_divisor_proprio(n);
   if (m == n) {
     return 1;  // n é primo
   } else {
