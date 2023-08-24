@@ -29,6 +29,8 @@ int primo(int n) {
 int main() {
   int i, count = 0;
   
+  printf("\n\tNumeros primos entre 2 e 1000\n\n");
+
   for (i = 2; i <= 1000; i++) {
 	  if (primo(i)){
 
@@ -49,5 +51,6 @@ int main() {
 		count++;
 	  }
   }
+  printf("\n\n");
   return 0;
 }
